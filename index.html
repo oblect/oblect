@@ -1,78 +1,47 @@
-{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
 
-header{
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 1005;
-    height: 80px;
-}
+Luca Vassallo <26lvassallo@fmschools.org>
+1:08 PM (3 hours ago)
+to Liam
 
-header h4{
-    position: absolute;
-    left: 10%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblect AI</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        .background {
+          width: 100%;
+          height: 100vh;
+          animation: changeColor 4.3s ease-in-out ;
+        }
+   
+        @keyframes changeColor {
+          0% {
+            background-color: rgb(35, 0, 92);
+          }
+          50% {
+            background-color: rgb(35, 0, 92);
+          }
+         
+        }
+      </style>
+</head>
+<body>
+   
+    <div class="background"></div>
+<div class="intro">
+    <h1 class="logo-header">
+        <span class="logo">Oblect</span><span class="logo">.</span><span class="logo">AI</span>
+    </h1>
+</div>
 
-.intro{
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(circle, 
-                black 0%, 
-                black 30%, 
-                red 40%, 
-                orange 50%, 
-                yellow 60%, 
-                green 70%, 
-                blue 80%, 
-                indigo 90%, 
-                violet 100%);
-    transition: 1s;
-}
-
-.logo-header{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.logo{
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-}
-
-.logo.active{
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-}
-
-.logo.fade{
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-}
-
-body{
-background: black;
-background-color: black;
-transition: background-color 2s ease;
-}
-
-.custom-cursor{
-    Cursor: url(iconmonstr-shape-20 (1).svg), auto;
-}
+    <header>
+        <h4>Oblect.AI</h4>
+    </header>
+   
+    <script src="app.js"></script>
+</body>
+</html>
